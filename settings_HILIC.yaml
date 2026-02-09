@@ -1,0 +1,38 @@
+general:
+  input_path: "input/path"
+  output_path: "output/path"
+  sample_metadata: metadata.xlsx
+  run_id: id1
+  ncores: 14
+  chunk_size: 48
+xcms_parameters:
+  prefiltering:
+    rtmin: 30    # Minimum retention time
+    rtmax: 1020   # Maximum retention time
+    mzmin: 30    # Minimum Mz
+    mzmax: 1200   # Maximum Mz
+  centwave:
+    mzdiff: 0.01
+    peakwidth: c(3,20)
+    ppm: 30
+    prefilter: c(3,1000)
+    snthresh: 3
+  peak_grouping1:
+    binSize: 0.05
+    bw: 3
+    maxFeatures: 50
+    minFraction: 0.5
+  alignment:
+    extraPeaks: 5
+    family: gaussian
+    minFraction: 0.9
+    smooth: loess
+    span: 0.6
+  peak_grouping2:
+    binSize: 0.05
+    bw: 3
+    maxFeatures: 50
+    minFraction: 0.5
+CAMERA_parameters:
+  camera_rules: "path/to/rules_pos.csv"
+  polarity: positive
