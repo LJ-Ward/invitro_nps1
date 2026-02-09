@@ -21,7 +21,7 @@ xcms_parameters:
     binSize: 0.05
     bw: 3
     maxFeatures: 50
-    minFraction: 0.8
+    minFraction: 0.5
   alignment:
     extraPeaks: 5
     family: gaussian
@@ -32,7 +32,7 @@ xcms_parameters:
     binSize: 0.05
     bw: 3
     maxFeatures: 50
-    minFraction: 0.8
+    minFraction: 0.5
 CAMERA_parameters:
   camera_rules: "path/to/rules_pos.csv"
   polarity: positive
