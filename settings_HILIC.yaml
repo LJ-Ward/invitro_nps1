@@ -14,14 +14,14 @@ xcms_parameters:
   centwave:
     mzdiff: 0.01
     peakwidth: c(3,20)
-    ppm: 30
-    prefilter: c(3,1000)
-    snthresh: 3
+    ppm: 15
+    prefilter: c(3,1500)
+    snthresh: 15
   peak_grouping1:
     binSize: 0.05
     bw: 3
     maxFeatures: 50
-    minFraction: 0.5
+    minFraction: 0.8
   alignment:
     extraPeaks: 5
     family: gaussian
@@ -32,7 +32,7 @@ xcms_parameters:
     binSize: 0.05
     bw: 3
     maxFeatures: 50
-    minFraction: 0.5
+    minFraction: 0.8
 CAMERA_parameters:
   camera_rules: "path/to/rules_pos.csv"
   polarity: positive
